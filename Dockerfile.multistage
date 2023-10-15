@@ -33,6 +33,6 @@ COPY --from=build-stage /docker-golang /docker-golang
 
 EXPOSE 8080
 
-USER angelson:Angelino@03Db
+USER nonroot:nonroot
 
 ENTRYPOINT ["/docker-golang"]
